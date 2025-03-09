@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-import { createServer } from "@vercel/node";
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var novelsRouter = require('./routes/novels');
@@ -42,4 +41,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-export default app
+module.exports = app;
