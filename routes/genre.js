@@ -22,7 +22,7 @@ router.get("/", async (req, res) => {
 
     res.status(200).json({
       message: "Get data success",
-      result: novels,
+      data: novels,
       totalData: novels.length
     });
   } catch (error) {
